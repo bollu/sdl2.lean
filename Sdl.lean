@@ -2,9 +2,11 @@ import Alloy.C
 open scoped Alloy.C
 
 alloy c include <lean/lean.h>
+alloy c include <sdl.h>
 
+-- alloy c extern
 alloy c extern def myAdd (x y : UInt32) : UInt32 := {
-  return x + y;
+        return x + y;
 }
 
 
